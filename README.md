@@ -130,11 +130,12 @@ looks like this:
 <a href="http://www.flickr.com/photos/walkingsf/9807625623/"><img src="http://farm8.staticflickr.com/7357/9807625623_4d42349da9_o.png"></a>
 
 with only the GPS tracks that don't quite correspond to
-streets showing through. In this case, the big obvious ones
-are the ferry route to Sausalito, the Exploratorium pier,
+streets showing through. In this case, the map of San Francisco
+is pretty complete, so all that shows through is
+the ferry route to Sausalito, the Exploratorium pier,
 and some noise downtown from bad GPS reception.
 
 Using the layer this way is usually practical from zooms 12 to 15,
 where it is zoomed in enough that the Locator Overlay shows all
-the streets instead of only the major ones, not not zoomed in enough
+the streets instead of only the major ones, but not zoomed in enough
 that iD switches from display to editing.
