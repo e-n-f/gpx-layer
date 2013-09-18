@@ -62,8 +62,8 @@ Then it is time to make map tiles out of the data. You can do this with
 This will take a few minutes if you have a few million points in your GPX files,
 or hours and hours if you have billions.
 
-If you don't want to go all the way to zoom level 18, you can use a different number
-instead of <code>-z18</code>.  
+If you don't want to go all the way to zoom level 18 (or if you want to go
+even deeper), you can use a different number instead of <code>-z18</code>.  
 If your computer has more than 8 processors, you can use a different number
 instead of <code>-P8</code>.
 
