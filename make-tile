@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p tiles/$1/$2/$3
+echo "rendering $1 $2 $3 $4 $5 $6"
+../datamaps/render -g -t0 -C256 $1 $2 $3 $4 | pngquant 256 > tiles/$1/$2/$3/$4.png
