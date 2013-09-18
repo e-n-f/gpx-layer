@@ -75,7 +75,11 @@ The previous step will have placed the map tiles into a directory called
 
 If you the directory you are working in is accessible from a web browser,
 there is a file called <code>test.html</code> that is already set up to
-show <code>tiles/gpx.dm</code> in a web map. Otherwise, you'll need to
+show <code>tiles/gpx.dm</code> in a web map. (You will probably need to
+scroll and zoom to see anything, since it doesn't know where your GPS tracks
+are located and is probably pointed to the wrong part of the earth.)
+
+Otherwise, you'll need to
 copy the <code>tiles</code> directory to a web server to try it out.
 
 Adding your tiles as a tracing layer in iD
