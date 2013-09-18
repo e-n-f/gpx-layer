@@ -110,9 +110,31 @@ after the opening bracket:
         "extent": [ [ -180.00, -90.00 ], [ 180.00, 90.00 ] ]
     },
 
-even though this overstates the area where it is relevant.
+even though this overstates the area where the layer is relevant.
+Be sure to include the trailing comma after the closing brace.
+It's easy to leave off by accident.
 
 You can then open up iD in a web browser and turn your new layer on
 in the Layers popup at the right:
 
 <a href="http://www.flickr.com/photos/walkingsf/9807568194"><img src="http://farm4.staticflickr.com/3684/9807568194_ea603fb247_o.png"></a>
+
+Looking for missing streets
+---------------------------
+
+The layer you turn on last draws on top of the other layers,
+so one nice thing this enables is looking for missing streets.
+Turn the Locator Overlay off and back on again, and then it
+looks like this:
+
+<a href="http://www.flickr.com/photos/walkingsf/9807625623/"><img src="http://farm8.staticflickr.com/7357/9807625623_4d42349da9_o.png"></a>
+
+with only the GPS tracks that don't quite correspond to
+streets showing through. In this case, the big obvious ones
+are the ferry route to Sausalito, the Exploratorium pier,
+and some noise downtown from bad GPS reception.
+
+Using the layer this way is usually practical from zooms 12 to 15,
+where it is zoomed in enough that the Locator Overlay shows all
+the streets instead of only the major ones, not not zoomed in enough
+that iD switches from display to editing.
