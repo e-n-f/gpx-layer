@@ -67,7 +67,10 @@ instead of <code>-z18</code>.
 If your computer has more than 8 processors, you can use a different number
 instead of <code>-P8</code>.
 
-This process will have placed the map tiles into a directory called
+Trying out your map tiles
+-------------------------
+
+The previous step will have placed the map tiles into a directory called
 <code>tiles/gpx.dm</code>.
 
 If you the directory you are working in is accessible from a web browser,
