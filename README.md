@@ -65,7 +65,7 @@ or hours and hours if you have billions.
 If you don't want to go all the way to zoom level 18, you can use a different number
 instead of <code>-z18</code>.  
 If your computer has more than 8 processors, you can use a different number
-instead of </code>-P8</code>.
+instead of <code>-P8</code>.
 
 This process will have placed the map tiles into a directory called
 <code>tiles/gpx.dm</code>.
