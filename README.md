@@ -89,6 +89,7 @@ On my home machine, the root directory of the web server is /var/www,
 so I copied my <code>tiles</code> directory into a directory there
 called <code>tracing</code> with
 
+    $ sudo -s
     # rsync -vax tiles /var/www/tracing
 
 Then I also checked out a copy of iD in that directory:
@@ -123,7 +124,9 @@ Looking for missing streets
 ---------------------------
 
 The layer you turn on last draws on top of the other layers,
-so one nice thing this enables is looking for missing streets.
+so one nice thing this enables is looking for streets that
+are missing from the map but are in the GPS logs.
+
 Turn the Locator Overlay off and back on again, and then it
 looks like this:
 
