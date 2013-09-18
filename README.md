@@ -119,7 +119,9 @@ even though this overstates the area where the layer is relevant.
 Be sure to include the trailing comma after the closing brace.
 It's easy to leave off by accident.
 
-You can then open up iD in a web browser and turn your new layer on
+You can then open up your modified copy of iD
+(http://localhost/tracing/iD or wherever you put it instead)
+in a web browser and turn your new layer on
 in the Layers popup at the right:
 
 <a href="http://www.flickr.com/photos/walkingsf/9807568194"><img src="http://farm4.staticflickr.com/3684/9807568194_ea603fb247_o.png"></a>
