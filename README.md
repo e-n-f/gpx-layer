@@ -31,6 +31,21 @@ Then come back here:
 Extracting points from GPX files
 --------------------------------
 
+The next step is to extract tracks from your GPX files and index
+them by location. If you keep your files in <code>~/gpx</code>,
+index them into a new datamaps directory called <code>gpx.dm</code>
+by doing
+
+    $ find ~/gpx -name '*.gpx' -print0 | xargs -0 ./parse-gpx | ../datamaps/encode -z20 -m8 -o gpx.dm
+
+If you keep your GPX files in a different directory, use the name of that
+directory instead.
+
+If you already have an old <code>gpx.dm</code> directory, you'll first need to
+
+    $ rm -r gpx.dm
+
+to get rid of it before you can index new tracks into it.
 
 Making map tiles
 ----------------
