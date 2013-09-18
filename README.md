@@ -80,3 +80,39 @@ copy the <code>tiles</code> directory to a web server to try it out.
 
 Adding your tiles as a tracing layer in iD
 ------------------------------------------
+
+To use your tiles in iD, they really need to be on a web server,
+and you need to make a copy of iD on the web server (or some other
+web server) too.
+
+On my home machine, the root directory of the web server is /var/www,
+so I copied my <code>tiles</code> directory into a directory there
+called <code>tracing</code> with
+
+    # rsync -vax tiles /var/www/tracing
+
+Then I also checked out a copy of iD in that directory:
+
+    # cd /var/www/tracing
+    # git clone https://github.com/systemed/iD.git
+
+The tricky part is that you then have to edit iD's
+<code>data/imagery.json</code> file to include your new layer.
+
+The simplest thing is to add it like this at the start, right
+after the opening bracket:
+
+    {
+        "name": "GPX overlay",
+        "template": "/tracing/tiles/gpx.dm/{z}/{x}/{y}.png",
+        "overlay": true,
+        "scaleExtent": [ 0, 18 ],
+        "extent": [ [ -180.00, -90.00 ], [ 180.00, 90.00 ] ]
+    },
+
+even though this overstates the area where it is relevant.
+
+You can then open up iD in a web browser and turn your new layer on
+in the Layers popup at the right:
+
+<a href="http://www.flickr.com/photos/walkingsf/9807568194"><img src="http://farm4.staticflickr.com/3684/9807568194_ea603fb247_o.png"></a>
