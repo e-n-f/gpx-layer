@@ -57,7 +57,7 @@ Making map tiles
 
 Then it is time to make map tiles out of the data. You can do this with
 
-    $ ../datamaps/enumerate -z18 gpx.dm | xargs -L1 -P8 ./make-tile
+    $ ../datamaps/enumerate -s -z18 gpx.dm | xargs -L1 -P8 ./make-tile
 
 This will take a few minutes if you have a few million points in your GPX files,
 or hours and hours if you have billions.
